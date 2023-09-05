@@ -1,0 +1,84 @@
+{
+    "info":{
+    "name": "EF_ACMP_DI",
+    "description": "A digital interface for the EF_R2RVC02 analog comparator",
+    "repo": "https://github.com/efabless/EF_ACMP_DI",
+    "author": "Mohamed Shalan",
+    "email": "mshalan@efabless.com",
+    "version": "0.9",
+    "date": "9-05-2023",
+    "owner": "Efabless Corp.",
+    "license": "Apache 2.0",
+    "category": "2",
+        "tags": [
+            "peripheral",
+            "analog comparator"
+        ],
+        "bus": [
+            "generic"
+        ],
+    "type": "hybrid",
+    "status": "verified",
+    "width": "0",
+    "height": "0",
+    "cell_count": "0"
+    },
+    "regs": [
+        {
+            "name": "SEL",
+            "size": "2",
+            "mode": "rw",
+            "init": "0",
+            "fields": [
+                {
+                    "name": "sela",
+                    "from": "0",
+                    "size": "1",
+                    "port": "di_sela"
+                },
+                {
+                    "name": "selb",
+                    "from": "1",
+                    "size": "1",
+                    "port": "di_selb"
+                }
+            ]
+        }
+    ],
+    "interface": [
+        {
+            "name": "sela",
+            "port": "sela",
+            "dir": "output",
+            "size": "1"
+        },
+        {
+            "name": "selb",
+            "port": "selb",
+            "dir": "output",
+            "size": "1"
+        },
+        {
+            "name": "vo",
+            "port": "vo",
+            "dir": "input",
+            "size": "1"
+        }
+    ],
+
+    "flags": [
+        {
+            "name": "hi",
+            "port": "vo"
+        }
+    ],
+    "ports": [
+        {"name": "sela", "size": "4", "dir" : "output"},
+        {"name": "selb", "size": "8", "dir" : "output"},
+        {"name": "vo", "size": "8", "dir" : "input"},
+        {"name": "di_sela", "size": "1", "dir" : "input"},
+        {"name": "di_selb", "size": "1", "dir" : "input"},
+        {"name": "di_vo", "size": "8", "dir" : "output"}
+    ]
+    
+}

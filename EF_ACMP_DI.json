@@ -69,7 +69,7 @@
     "flags": [
         {
             "name": "hi",
-            "port": "vo"
+            "port": "di_vo"
         }
     ],
     "ports": [

@@ -71,8 +71,8 @@ module EF_ACMP_DI_ahbl (
 
 	wire		di_sela	= SEL_REG[0:0];
 	wire		di_selb	= SEL_REG[1:1];
-	wire		vo;
-	wire		_HI_FLAG_	= vo;
+	wire		di_vo;
+	wire		_HI_FLAG_	= di_vo;
 	wire		MIS_REG	= RIS_REG & IM_REG;
 	wire		ahbl_valid	= last_HSEL & last_HTRANS[1];
 	wire		ahbl_we	= last_HWRITE & ahbl_valid;

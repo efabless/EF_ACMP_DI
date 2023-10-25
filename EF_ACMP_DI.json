@@ -9,7 +9,7 @@
     "date": "9-05-2023",
     "owner": "Efabless Corp.",
     "license": "Apache 2.0",
-    "category": "2",
+    "category": "ams",
         "tags": [
             "peripheral",
             "analog comparator"
